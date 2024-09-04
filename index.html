@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Expense Tracker</h2>
+        <!-- Form for adding expenses -->
+        <div class="form-row mb-3">
+            <!-- Choose Expense Amount -->
+            <div class="col">
+                <label for="expenseAmount">Choose Expense Amount:</label>
+                <select id="expenseAmount" class="form-control">
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Choose Description -->
+            <div class="col">
+                <label for="expenseDescription">Choose Description:</label>
+                <select id="expenseDescription" class="form-control">
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="vacation">Vacation</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Choose Category -->
+            <div class="col">
+                <label for="expenseCategory">Choose Category:</label>
+                <select id="expenseCategory" class="form-control">
+                    <option value="fuel">Fuel</option>
+                    <option value="food">Food</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="movie">Movie</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add Expense Button -->
+            <div class="col d-flex align-items-end">
+                <button id="addExpense" class="btn btn-secondary btn-block">Add Expense</button>
+            </div>
+        </div>
+        <!-- List of expenses -->
+        <ul id="expenseList" class="list-group">
+            <!-- Dynamically generated list items will appear here -->
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
